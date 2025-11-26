@@ -222,7 +222,17 @@ body {
 
 /* thise is  Portfolio Section */
 
-.text-center {
+.text-center p {
   font-weight: bold;
   letter-spacing: 2px;
+  font-family: Poppins, sans-serif;
+}
+
+.text-center h1 {
+  color: #c4cfde;
+  letter-spacing: normal;
+  font-weight: 700;
+  line-height: 72px;
+  font-size: 60px;
+  font-family: Montserrat, sans-serif;
 }
