@@ -236,3 +236,18 @@ body {
   font-size: 60px;
   font-family: Montserrat, sans-serif;
 }
+
+.navbar-nav .nav-item button {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 120px;
+  height: 50px;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  line-height: 30.4px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #878e99;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
