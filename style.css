@@ -353,3 +353,31 @@ body {
   text-align: center;
   color: #fff;
 }
+
+.btn {
+  text-align: center;
+}
+
+.see-btn {
+  background: #2a2a2a;
+  color: #ff2b63;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 15px;
+  transition: transform 0.4s ease;
+}
+
+.see-btn:hover {
+  transform: translateY(-10px);
+  box-shadow: #1f1f22;
+}
+
+.spinner-border {
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+  color: #ff2b63;
+}
