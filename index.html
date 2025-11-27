@@ -1,308 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- start the code  -->
 
-<body>
-  <!-- start the code  -->
+    <!-- thise is navbar -->
+    <!-- thise is navbar -->
+    <header>
+      <div class="nav">
+        <nav class="navbar navbar-expand-xl fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">king</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item text-white">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >testimonial</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">contant</a>
+                </li>
+                <li class="nav-item cart-box">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="cart-count rounded-circle">0</span>
+                </li>
+              </ul>
+              <button class="btn shadow" type="submit">BUY NOW</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <!-- thise is navbar -->
-  <!-- thise is navbar -->
-  <header>
-    <div class="nav">
-      <nav class="navbar navbar-expand-xl fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">king</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item text-white">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">testimonial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">clients</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">contant</a>
-              </li>
-              <li class="nav-item cart-box">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart-count rounded-circle">0</span>
-              </li>
-            </ul>
-            <button class="btn shadow" type="submit">BUY NOW</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container m-auto">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h3>WELCOME TO MY WORLD</h3>
+              <h1>Hi, I'm <span>Harsh Vaghela</span></h1>
+              <h2>A Full-Stack Developer</h2>
+              <p class="mb-4">
+                I use animation as a third dimension by which to simplify
+                experiences and kuiding thro each and every interaction. I’m not
+                adding motion just to spruce things up, but doing it in ways
+                that.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <!-- <img src="photo-removebg-preview.png" alt="Profile" /> -->
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="container m-auto">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero-content">
-            <h3>WELCOME TO MY WORLD</h3>
-            <h1>Hi, I'm <span>Harsh Vaghela</span></h1>
-            <h2>A Full-Stack Developer</h2>
-            <p class="mb-4">
-              I use animation as a third dimension by which to simplify
-              experiences and kuiding thro each and every interaction. I’m not
-              adding motion just to spruce things up, but doing it in ways
-              that.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="hero-image">
-            <!-- <img src="photo-removebg-preview.png" alt="Profile" /> -->
+        <!-- in the first section secong row -->
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="container mt-5">
+              <h5 class="text mb-4">FIND WITH ME</h5>
+
+              <div class="d-flex flex-wrap gap-3">
+                <div class="social-box">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <div class="social-box">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- in the first section secong row -->
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="container mt-5">
-            <h5 class="text mb-4">FIND WITH ME</h5>
+    <!-- thise is hr line -->
+    <div class="container mt-5">
+      <hr class="border-2 border-secondary" />
+    </div>
 
-            <div class="d-flex flex-wrap gap-3">
-              <div class="social-box">
-                <i class="fa-brands fa-facebook-f"></i>
-              </div>
-
-              <div class="social-box">
-                <i class="fa-brands fa-twitter"></i>
-              </div>
-
-              <div class="social-box">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </div>
-
-              <div class="social-box">
-                <i class="fab fa-instagram"></i>
-              </div>
+    <!-- thise is feutuers section -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Features</h2>
+          <h1>What I Do</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card shadow rounded-3">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Strategy</h3>
+              <p>
+                A strategy is a general plan to achieve one or more long-term
+                goals under conditions of uncertainty.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card">
+              <i class="fas fa-palette"></i>
+              <h3>Design</h3>
+              <p>
+                UI/UX Design, Art Direction. A design is a plan or specification
+                for constructing an object or system.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>User Experience</h3>
+              <p>
+                User experience (UX) design is the process design teams use to
+                create products that provide meaningful experiences.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Strategy</h3>
+              <p>
+                A strategy is a general plan to achieve one or more long-term
+                goals under conditions of uncertainty.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card">
+              <i class="fas fa-palette"></i>
+              <h3>Design</h3>
+              <p>
+                UI/UX Design, Art Direction. A design is a plan or specification
+                for constructing an object or system.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="feature-card">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>User Experience</h3>
+              <p>
+                User experience (UX) design is the process design teams use to
+                create products that provide meaningful experiences.
+              </p>
             </div>
           </div>
         </div>
+        <hr />
       </div>
+    </section>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-3">
+      <hr class="border-2 border-secondary" />
     </div>
-  </section>
 
-  <!-- thise is hr line -->
-  <div class="container mt-5">
-    <hr class="border-2 border-secondary" />
-  </div>
-
-  <!-- thise is feutuers section -->
-  <section id="features" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Features</h2>
-        <h1>What I Do</h1>
+    <!-- Portfolio Section -->
+    <section>
+      <div class="container text-center">
+        <p class="text-danger">Visit my portfolio and keep your feedback</p>
+        <h1 class="">My Portfolio</h1>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card shadow rounded-3">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Strategy</h3>
-            <p>
-              A strategy is a general plan to achieve one or more long-term
-              goals under conditions of uncertainty.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card">
-            <i class="fas fa-palette"></i>
-            <h3>Design</h3>
-            <p>
-              UI/UX Design, Art Direction. A design is a plan or specification
-              for constructing an object or system.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card">
-            <i class="fas fa-mobile-alt"></i>
-            <h3>User Experience</h3>
-            <p>
-              User experience (UX) design is the process design teams use to
-              create products that provide meaningful experiences.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Strategy</h3>
-            <p>
-              A strategy is a general plan to achieve one or more long-term
-              goals under conditions of uncertainty.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card">
-            <i class="fas fa-palette"></i>
-            <h3>Design</h3>
-            <p>
-              UI/UX Design, Art Direction. A design is a plan or specification
-              for constructing an object or system.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="feature-card">
-            <i class="fas fa-mobile-alt"></i>
-            <h3>User Experience</h3>
-            <p>
-              User experience (UX) design is the process design teams use to
-              create products that provide meaningful experiences.
-            </p>
-          </div>
-        </div>
+      <!-- thise is butten -->
+      <div
+        class="second d-flex align-content-center justify-content-center mt-3"
+      >
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">
+              All project
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">
+              testimonial
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">
+              clients
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">
+              pricing
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">blog</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" aria-current="page" href="#">
+              contant
+            </button>
+          </li>
+        </ul>
       </div>
-      <hr />
-    </div>
-  </section>
 
-  <!-- thise is hr line  -->
-  <div class="container mt-3">
-    <hr class="border-2 border-secondary" />
-  </div>
+      <!-- thise is card -->
 
-  <!-- Portfolio Section -->
-  <section>
-    <div class="container text-center">
-      <p class="text-danger">Visit my portfolio and keep your feedback</p>
-      <h1 class="">My Portfolio</h1>
-    </div>
-    <!-- thise is butten -->
-    <div class="second d-flex align-content-center justify-content-center mt-3">
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">
-            All project
-          </button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">
-            testimonial
-          </button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">
-            clients
-          </button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">
-            pricing
-          </button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">blog</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" aria-current="page" href="#">
-            contant
-          </button>
-        </li>
-      </ul>
-    </div>
+      <div class="container">
+        <div class="row g-4 mt-5">
+          <!-- CARD 1 -->
 
-    <!-- thise is card -->
-
-    <div class="container">
-      <div class="row g-4 mt-5">
-        <!-- CARD 1 -->
-
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-01-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-solid fa-border-all"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-01-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-solid fa-border-all"></i>
+                </span>
               </div>
 
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
+
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 2 -->
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-02-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-solid fa-video"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
+          <!-- CARD 2 -->
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-02-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-solid fa-video"></i>
+                </span>
               </div>
 
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
+
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- /*
+          <!-- /*
           <div class="col-md-4">
             <div class="portfolio-card locked p-3 rounded-4">
               <div class="lock-box">🔒</div>
@@ -311,263 +332,820 @@
             </div>
           </div>
           */ -->
-        <!-- CARD 3 -->
-
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-03-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
-              </div>
-
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 4-->
-
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-04-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-regular fa-image"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
-              </div>
-
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-05-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-solid fa-border-all"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
-              </div>
-
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 6 -->
-
-        <div class="col-md-4">
-          <div class="portfolio-card">
-            <div class="img-card">
-              <img src="img/portfolio-large-06-340x250.jpg" alt="img" />
-              <span class="top-icon">
-                <i class="fa-regular fa-image"></i>
-              </span>
-            </div>
-
-            <div>
-              <p class="gallery small m-0 mt-3">GALLERY</p>
-
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <span class="small text-light"> </span>
-                <span class="likes">❤️ 1889</span>
-              </div>
-
-              <!-- TITLE ALWAYS BOTTOM -->
-              <h5 class="text mb-0">
-                NFT Dashboard Application Development.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- thise is btn  -->
-        <div class="text-center mt-5 mb-4">
-          <button class="see-btn">
-            See More
-            <div class="spinner-border" role="status"></div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- thise is hr line  -->
-  <div class="container mt-3">
-    <hr class="border-2 border-secondary" />
-  </div>
-
-  <!-- me resume section -->
-  <section>
-    <div class="container py-5">
-
-      <div class="row">
-
-        <!-- LEFT SIDE -->
-        <div class="col-md-6 position-relative">
-          <span class="year-label">1998 – 2010</span>
-          <h3 class="section-title">Education Quality</h3>
-
-          <div class="timeline-line"></div>
-
-          <!-- CARD 1 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>BSc in Computer Science <span class="rating-badge">3.90/4</span></h5>
-            <p class="subtitle">University of DVI (2006 – 2010)</p>
-            <p class="desc">The training provided by universities in order to prepare people to work in various sectors
-              of the economy or areas of culture.</p>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>AS - Science & Information <span class="rating-badge">4.75/5</span></h5>
-            <p class="subtitle">Superking College (2001 – 2005)</p>
-            <p class="desc">Higher education is tertiary education leading to award of an academic degree. Higher
-              education, also called post-secondary education.</p>
-          </div>
-
           <!-- CARD 3 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>Secondary School Education <span class="rating-badge">5.00/5</span></h5>
-            <p class="subtitle">Kingstar Secondary School (1998 – 2000)</p>
-            <p class="desc">Secondary education covers two phases on the International Standard Classification of
-              Education scale.</p>
-          </div>
-        </div>
 
-        <!-- RIGHT SIDE -->
-        <div class="col-md-6 position-relative">
-          <span class="year-label">2010 – 2022</span>
-          <h3 class="section-title">Job Experience</h3>
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-03-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </span>
+              </div>
 
-          <div class="timeline-line"></div>
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
 
-          <!-- CARD 1 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>Sr. Software Engineer <span class="country-badge">USA</span></h5>
-            <p class="subtitle">Google Out Tech – (2017 – Present)</p>
-            <p class="desc">Google's hiring process is an important part of our culture. Googlers care deeply about
-              their teams and the people who make them up.</p>
-          </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
 
-          <!-- CARD 2 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>Web Developer & Trainer <span class="country-badge">MALAYSIA</span></h5>
-            <p class="subtitle">Apple Developer Team – (2012 – 2016)</p>
-            <p class="desc">A popular destination with a growing number of highly qualified homegrown graduates,
-              securing a role in Malaysia isn't easy.</p>
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
+            </div>
           </div>
 
-          <!-- CARD 3 -->
-          <div class="resume-card shadow rounded-3">
-            <div class="timeline-dot"></div>
-            <h5>Front-end Developer <span class="country-badge">INDIA</span></h5>
-            <p class="subtitle">Nike – (2020 – 2021)</p>
-            <p class="desc">The India economy has grown strongly over recent years, having transformed itself from a
-              producer and innovation-based economy.</p>
+          <!-- CARD 4-->
+
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-04-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-regular fa-image"></i>
+                </span>
+              </div>
+
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
+
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-05-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-solid fa-border-all"></i>
+                </span>
+              </div>
+
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
+
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+
+          <div class="col-md-4">
+            <div class="portfolio-card">
+              <div class="img-card">
+                <img src="img/portfolio-large-06-340x250.jpg" alt="img" />
+                <span class="top-icon">
+                  <i class="fa-regular fa-image"></i>
+                </span>
+              </div>
+
+              <div>
+                <p class="gallery small m-0 mt-3">GALLERY</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <span class="small text-light"> </span>
+                  <span class="likes">❤️ 1889</span>
+                </div>
+
+                <!-- TITLE ALWAYS BOTTOM -->
+                <h5 class="text mb-0">
+                  NFT Dashboard Application Development.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- thise is btn  -->
+          <div class="text-center mt-5 mb-4">
+            <button class="see-btn">
+              See More
+              <div class="spinner-border" role="status"></div>
+            </button>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-3">
+      <hr class="border-2 border-secondary" />
     </div>
-  </section>
 
-  <!-- thise is hr line  -->
-  <div class="container mt-1">
-    <hr class="border-2 border-secondary" />
-  </div>
+    <!-- me resume section -->
+    <section>
+      <div class="container py-5">
+        <div class="row">
+          <div class="row text-center">
+            <p class="experience-text">7+ YEARS OF EXPERIENCE</p>
+            <h1 class="resume-title mb-4">My Resume</h1>
 
-  <!-- thise is Testimonial section -->
-  <section>
+            <div class="row g-4 mt-3 mb-5">
+              <div class="col-md-3">
+                <div class="tab-box active-tab">
+                  <p class="active-text">Education</p>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="tab-box">
+                  <p>Professional Skills</p>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="tab-box">
+                  <p>Experience</p>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="tab-box">
+                  <p>Interview</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEFT SIDE -->
+          <div class="col-md-6 position-relative">
+            <span class="year-label">1998 – 2010</span>
+            <h3 class="section-title">Education Quality</h3>
+
+            <div class="timeline-line"></div>
+
+            <!-- CARD 1 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                BSc in Computer Science <span class="rating-badge">3.90/4</span>
+              </h5>
+              <p class="subtitle">University of DVI (2006 – 2010)</p>
+              <p class="desc">
+                The training provided by universities in order to prepare people
+                to work in various sectors of the economy or areas of culture.
+              </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                AS - Science & Information
+                <span class="rating-badge">4.75/5</span>
+              </h5>
+              <p class="subtitle">Superking College (2001 – 2005)</p>
+              <p class="desc">
+                Higher education is tertiary education leading to award of an
+                academic degree. Higher education, also called post-secondary
+                education.
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                Secondary School Education
+                <span class="rating-badge">5.00/5</span>
+              </h5>
+              <p class="subtitle">Kingstar Secondary School (1998 – 2000)</p>
+              <p class="desc">
+                Secondary education covers two phases on the International
+                Standard Classification of Education scale.
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-6 position-relative">
+            <span class="year-label">2010 – 2022</span>
+            <h3 class="section-title">Job Experience</h3>
+
+            <div class="timeline-line"></div>
+
+            <!-- CARD 1 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                Sr. Software Engineer <span class="country-badge">USA</span>
+              </h5>
+              <p class="subtitle">Google Out Tech – (2017 – Present)</p>
+              <p class="desc">
+                Google's hiring process is an important part of our culture.
+                Googlers care deeply about their teams and the people who make
+                them up.
+              </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                Web Developer & Trainer
+                <span class="country-badge">MALAYSIA</span>
+              </h5>
+              <p class="subtitle">Apple Developer Team – (2012 – 2016)</p>
+              <p class="desc">
+                A popular destination with a growing number of highly qualified
+                homegrown graduates, securing a role in Malaysia isn't easy.
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="resume-card shadow rounded-3">
+              <div class="timeline-dot"></div>
+              <h5>
+                Front-end Developer <span class="country-badge">INDIA</span>
+              </h5>
+              <p class="subtitle">Nike – (2020 – 2021)</p>
+              <p class="desc">
+                The India economy has grown strongly over recent years, having
+                transformed itself from a producer and innovation-based economy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-1">
+      <hr class="border-2 border-secondary" />
+    </div>
+
+    <!-- thise is testimonial section -->
     <div class="container">
-      <div class="text-center">
-        <div class="section-label">WHAT CLIENTS SAY</div>
-        <h2 class="section-title">Testimonial</h2>
-      </div>
+      <div class="testimonial-section mb-5">
+        <!-- Header -->
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <div class="section-tag mb-3">WHAT CLIENTS SAY</div>
+            <h2 class="section-title mb-5">Testimonial</h2>
+          </div>
+        </div>
 
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-inner">
-          <!-- Testimonial 1 -->
-          <div class="carousel-item active">
-            <div class="row align-items-center g-4">
-              <div class="col-lg-4">
-                <div class="profile-section">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop"
-                    alt="Nevine Acotanza" class="profile-image">
-                  <div class="company-name">RAINBOW-THEMES</div>
-                  <h3 class="client-name">Nevine Acotanza</h3>
-                  <p class="client-position">Chief Operating Officer</p>
+        <!-- One Line Layout -->
+        <div class="row align-items-center">
+          <!-- LEFT SIDE (Image Card) -->
+          <div class="col-md-4">
+            <div class="portfolio-card p-3">
+              <div class="img-card">
+                <img
+                  src="img/final-home-1st.png"
+                  alt="img"
+                  class="w-100 rounded"
+                />
+                <span class="top-icon">
+                  <i class="fa-solid fa-border-all"></i>
+                </span>
+              </div>
+
+              <p class="gallery small m-0 mt-3">GALLERY</p>
+
+              <div
+                class="d-flex justify-content-between align-items-center mb-1"
+              >
+                <span class="small text-light"></span>
+                <span class="likes">❤️ 1889</span>
+              </div>
+
+              <h5 class="text mb-0">NFT Dashboard Application Development.</h5>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE (Testimonial Text Card) -->
+          <div class="col-md-8">
+            <div class="testimonial-text text-start ps-md-4">
+              <!-- Quotes Icon -->
+              <i
+                class="fas fa-quote-left quote-icon mb-4 d-none d-md-block"
+              ></i>
+
+              <!-- Rating -->
+              <div class="rating d-flex gap-2 mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <!-- Project Title -->
+              <div class="project-title mb-2">Android App Development</div>
+
+              <!-- Meta -->
+              <div class="project-meta mb-3">
+                via Upwork - Mar 4, 2015 - Aug 30, 2021 test
+              </div>
+
+              <!-- Body -->
+              <div class="testimonial-body mb-4">
+                Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor
+                aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                lobortis mauris hendrerit ante. Ut tincidunt est ac dolor
+                aliquam sodales phasellus smauris test
+              </div>
+
+              <!-- Client Info -->
+              <div class="client-info mt-4">
+                <div class="client-name mb-1">Nevine Acotanza</div>
+                <div class="client-position">Chief Operating Office</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="dot active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-1">
+      <hr class="border-2 border-secondary" />
+    </div>
+
+    <!-- thise is Awesome section -->
+    <section class="clients-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-12 col-lg-3 mb-5">
+            <div class="section-tag mb-3">POPULAR CLIENTS</div>
+            <h2 class="section-title mb-4">Awesome Clients</h2>
+
+            <div class="sidebar-menu p-4">
+              <div class="sidebar-item active">JavaScript</div>
+              <div class="sidebar-item">Product Design</div>
+              <div class="sidebar-item">WordPress</div>
+              <div class="sidebar-item">HTML to React</div>
+              <div class="sidebar-item">React To Laravel</div>
+              <div class="sidebar-item">Python</div>
+            </div>
+          </div>
+
+          <!-- Clients Grid -->
+          <div class="col-12 col-lg-9">
+            <div class="row g-4">
+              <!-- Client Card (repeat) -->
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-wedding">
+                      <div class="logo-icon">JA</div>
+                      <div class="logo-text-small">WEDDING<br />agency</div>
+                    </div>
+                  </div>
+                  <div class="client-name">John Due</div>
                 </div>
               </div>
-              <div class="col-lg-8">
-                <div class="content-section">
-                  <div class="quote-icon">"</div>
-                  <h4 class="project-title">Android App Development</h4>
-                  <p class="project-meta">via Upwork - Mar 4, 2015 - Aug 30, 2021 test</p>
-                  <p class="testimonial-text">
-                    Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed
-                    mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam
-                    sodales phasellus smauris test
-                  </p>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-ms">
+                      <span class="ms-text-top">DESIGN STUDIO</span>
+                      <div class="ms-circle">MS</div>
+                      <span class="ms-text-bottom">MAKE WITH LOVE</span>
+                    </div>
                   </div>
+                  <div class="client-name">Smiths Marth</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-studio">
+                      <div>studio</div>
+                      <span class="studio-by">BY A. LIN</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Add Dev</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-wedding">
+                      <div class="logo-icon">JA</div>
+                      <div class="logo-text-small">WEDDING<br />agency</div>
+                    </div>
+                  </div>
+                  <div class="client-name">John Due</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-ms">
+                      <span class="ms-text-top">DESIGN STUDIO</span>
+                      <div class="ms-circle">MS</div>
+                      <span class="ms-text-bottom">MAKE WITH LOVE</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Smiths Marth</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-studio">
+                      <div>studio</div>
+                      <span class="studio-by">BY A. LIN</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Add Dev</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-wedding">
+                      <div class="logo-icon">JA</div>
+                      <div class="logo-text-small">WEDDING<br />agency</div>
+                    </div>
+                  </div>
+                  <div class="client-name">John Due</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-ms">
+                      <span class="ms-text-top">DESIGN STUDIO</span>
+                      <div class="ms-circle">MS</div>
+                      <span class="ms-text-bottom">MAKE WITH LOVE</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Smiths Marth</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-studio">
+                      <div>studio</div>
+                      <span class="studio-by">BY A. LIN</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Add Dev</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-wedding">
+                      <div class="logo-icon">JA</div>
+                      <div class="logo-text-small">WEDDING<br />agency</div>
+                    </div>
+                  </div>
+                  <div class="client-name">John Due</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-ms">
+                      <span class="ms-text-top">DESIGN STUDIO</span>
+                      <div class="ms-circle">MS</div>
+                      <span class="ms-text-bottom">MAKE WITH LOVE</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Smiths Marth</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="client-card">
+                  <div class="client-logo">
+                    <div class="logo-studio">
+                      <div>studio</div>
+                      <span class="studio-by">BY A. LIN</span>
+                    </div>
+                  </div>
+                  <div class="client-name">Add Dev</div>
+                </div>
+              </div>
+
+              <!-- keep all remaining cards same -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-1">
+      <hr class="border-2 border-secondary" />
+    </div>
+
+    <!-- thise is My Pricing section -->
+    <section class="pricing-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- LEFT TITLE -->
+          <div class="col-lg-4 mb-5">
+            <div class="section-tag mb-2">PRICING</div>
+            <h2 class="section-title">My Pricing</h2>
+          </div>
+
+          <!-- RIGHT PRICING CONTENT -->
+          <div class="col-lg-8">
+            <!-- Tabs -->
+            <div
+              class="pricing-tabs d-flex align-items-center justify-content-between"
+            >
+              <div class="tab">Static</div>
+              <div class="tab">Standard</div>
+              <div class="tab">Premium</div>
+              <!-- <div class="recommended-badge">Recommended</div> -->
+            </div>
+
+            <!-- Pricing Card -->
+            <div class="pricing-card mt-4">
+              <div
+                class="card-header d-flex justify-content-between align-items-start"
+              >
+                <div>
+                  <h4 class="pricing-title">Make Your Single Page</h4>
+                  <p class="pricing-sub">Elementor / WPBakery</p>
+                </div>
+                <div class="price-box">$30.00</div>
+              </div>
+
+              <p class="pricing-desc mt-3">
+                All the Lorem Ipsum generators on the Internet tend to repeat
+                predefined chunks as necessary
+              </p>
+
+              <!-- Feature List -->
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li>✔ 1 Page with Elementor</li>
+                    <li>✔ Design Customization</li>
+                    <li>✔ Responsive Design</li>
+                    <li>✔ Content Upload</li>
+                    <li>✔ Design Customization</li>
+                    <li>✔ 2 Plugins/Extensions</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li>✔ Multipage Elementor</li>
+                    <li>✔ Design Figma</li>
+                    <li>✔ MAintaine Design</li>
+                    <li>✔ Content Upload</li>
+                    <li>✔ Design With XD</li>
+                    <li>✔ 8 Plugins/Extensions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Order Button -->
+              <div class="text-center mt-5">
+                <button class="order-btn">ORDER NOW</button>
+
+                <div class="delivery mt-3">
+                  <span>⏱ 2 Days Delivery</span>
+                  <span>⚡ Unlimited Revision</span>
+                </div>
+              </div>
+            </div>
+            <!-- pricing-card end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- thise is hr line  -->
+    <div class="container mt-1">
+      <hr class="border-2 border-secondary" />
+    </div>
+
+    <!-- thise ic contect section -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <!-- Title -->
+        <p class="contact-tag text-center">CONTACT</p>
+        <h2 class="contact-title text-center mb-5">Contact With Me</h2>
+
+        <div class="row">
+          <!-- LEFT CARD -->
+          <div class="col-lg-4 mb-4">
+            <div class="contact-card p-4">
+              <img
+                src="img/contact1.png"
+                class="img-fluid rounded mb-3"
+                alt="profile"
+              />
+
+              <h4 class="contact-name">Nevine Acotanza</h4>
+              <p class="contact-role">Chief Operating Officer</p>
+
+              <p class="contact-text">
+                I am available for freelance work. Connect with me via and call
+                in to my account.
+              </p>
+
+              <p class="contact-info">
+                <strong>Phone:</strong> +012 345 678 90
+              </p>
+              <p class="contact-info">
+                <strong>Email:</strong> admin@example.com
+              </p>
+
+              <p class="contact-social-title mt-4 mb-3">FIND WITH ME</p>
+
+              <div class="d-flex gap-3">
+                <div class="social-box">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="social-box">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="social-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="col-lg-8">
+            <div class="contact-form p-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Your Name</label>
+                  <input type="text" class="form-control custom-input" />
+                </div>
+
+                <div class="col-md-6">
+                  <label>Phone Number</label>
+                  <input type="text" class="form-control custom-input" />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label>Email</label>
+                  <input type="email" class="form-control custom-input" />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label>Subject</label>
+                  <input type="text" class="form-control custom-input" />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label>Your Message</label>
+                  <textarea
+                    class="form-control custom-input"
+                    rows="6"
+                  ></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button class="send-btn w-100">SEND MESSAGE</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
+    </section>
 
+    <!-- thise is hr line  -->
+    <div class="container mt-1">
+      <hr class="border-2 border-secondary" />
+    </div>
+
+    <!-- thise is footer section -->
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- LOGO + SOCIAL -->
+          <div class="col-lg-3 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <!-- <img
+                src="https://i.ibb.co/2cQYkWG/user.jpg"
+                class="footer-img"
+                alt=""
+              /> -->
+              <h5 class="text-white fw-bold">king</h5>
+            </div>
+
+            <div class="d-flex gap-3">
+              <div class="footer-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="footer-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="footer-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUICK LINK -->
+          <div class="col-lg-3 mb-4">
+            <h6 class="footer-title">QUICK LINK</h6>
+            <ul class="footer-links">
+              <li>About</li>
+              <li>Portfolio</li>
+              <li>Services</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <!-- RESOURCES -->
+          <div class="col-lg-3 mb-4">
+            <h6 class="footer-title">RESOURCES</h6>
+            <ul class="footer-links">
+              <li>Authentication</li>
+              <li>System Status</li>
+              <li>Terms of Service</li>
+              <li>Pricing</li>
+              <li>Over Right</li>
+            </ul>
+          </div>
+
+          <!-- DEVELOPERS -->
+          <div class="col-lg-3 mb-4">
+            <h6 class="footer-title">DEVELOPERS</h6>
+            <ul class="footer-links">
+              <li>Documentation</li>
+              <li>Authentication</li>
+              <li>API Reference</li>
+              <li>Support</li>
+              <li>Open Source</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-line mt-4" />
+
+        <p class="text-center footer-copy mt-3">
+          © 2025. All rights reserved by Rainbow-Themes
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

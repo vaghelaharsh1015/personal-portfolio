@@ -423,6 +423,45 @@ body {
 /* .resume-card
 */
 
+.resume-title {
+  font-size: 55px;
+  font-weight: 700;
+  color: #e8eefc;
+}
+
+.experience-text {
+  color: #ff0057;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.tab-box {
+  background: #25262b;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tab-box:hover {
+  background: #2b2c31;
+  box-shadow: 0px 0px 25px rgba(255, 0, 90, 0.4);
+}
+
+.tab-box p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tab-box p.active-text {
+  color: #ff0057;
+}
+
 .resume-card {
   background: #1a1b1e;
   border-radius: 18px;
@@ -487,107 +526,493 @@ body {
 /* thise is tesimonial */
 
 .testimonial-section {
-  padding: 80px 0;
-  background: #1a1a1a;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  /* width: 100%;
+  padding: 60px 0; */
 }
 
-.section-label {
-  color: #ff0066;
-  font-size: 14px;
+.section-tag {
+  color: #ff2e63;
   font-weight: 600;
+  font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 15px;
 }
 
 .section-title {
-  color: #e8e8e8;
-  font-size: 48px;
+  color: #ffffff;
+  /* font-size: clamp(32px, 5vw, 48px); */
   font-weight: 700;
-  margin-bottom: 60px;
 }
 
 .testimonial-card {
-  background: #242424;
+  /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 20px;
-  padding: 40px;
-  height: 100%;
-  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
 }
 
-.testimonial-card:hover {
-  transform: translateY(-5px);
+.client-image-wrapper {
+  position: relative;
 }
 
-.profile-section {
-  margin-bottom: 30px;
-}
-
-.profile-image {
+.client-image {
   width: 100%;
-  max-width: 250px;
-  height: 300px;
-  object-fit: cover;
+  max-width: 320px;
+  height: 380px;
   border-radius: 15px;
-  margin-bottom: 25px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.company-name {
-  color: #ff0066;
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2a2a3e;
+  color: #ff2e63;
+  padding: 10px 25px;
+  border-radius: 25px;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  border: 1px solid rgba(255, 46, 99, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.client-name {
-  color: #e8e8e8;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.client-position {
-  color: #888;
-  font-size: 14px;
-}
-
-.content-section {
+.testimonial-text {
   position: relative;
 }
 
 .quote-icon {
-  font-size: 80px;
-  color: #2a2a2a;
+  font-size: clamp(60px, 8vw, 100px);
+  color: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  top: -30px;
+  left: -20px;
   line-height: 1;
-  margin-bottom: 20px;
+}
+
+.rating i {
+  color: #ffd700;
+  font-size: 20px;
 }
 
 .project-title {
-  color: #e8e8e8;
-  font-size: 24px;
+  color: #ffffff;
+  font-size: clamp(24px, 4vw, 32px);
   font-weight: 600;
-  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .project-meta {
-  color: #888;
-  font-size: 13px;
-  margin-bottom: 25px;
+  color: #999;
+  font-size: 14px;
 }
 
-.testimonial-text {
-  color: #b0b0b0;
-  font-size: 16px;
+.testimonial-body {
+  color: #c0c0c0;
+  font-size: clamp(15px, 2vw, 17px);
   line-height: 1.8;
-  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
 }
 
-.rating {
-  color: #ffc107;
-  font-size: 16px;
+.client-info {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.client-name {
+  color: #ffffff;
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 600;
+}
+
+.client-position {
+  color: #999;
+  font-size: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dot.active {
+  background: #ff2e63;
+  width: 35px;
+  border-radius: 6px;
+}
+
+/* thise is Awesome section */
+.clients-section {
+  /* background: #0f1117; */
+  color: #fff;
+}
+
+/* Sidebar */
+.sidebar-menu {
+  background: #15181f;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-item {
+  padding: 15px 10px;
+  color: #d3d3d3;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.sidebar-item:hover {
+  color: #fff;
+}
+
+.sidebar-item.active {
+  background: #10131a;
+  color: #ff416c;
+}
+
+/* Client Card */
+.client-card {
+  background: #15181f;
+  border-radius: 16px;
+  padding: 30px 20px 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Logo box */
+.client-logo {
+  padding: 35px 10px;
+  height: 150px;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-name {
+  padding-top: 12px;
+  color: #c7d5e0;
+}
+
+/* Wedding logo */
+.logo-wedding {
+  text-align: center;
+}
+
+.logo-icon {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.logo-text-small {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+/* thise is my prising section */
+
+.pricing-section {
+  /* background: #0f1117; */
+  color: #c7d5e0;
+}
+
+/* Title */
+.section-tag {
+  color: #ff416c;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 42px;
+  color: #dbe6ff;
+}
+
+/* Tabs */
+.pricing-tabs {
+  background: #15181f;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.tab {
+  padding: 10px 35px;
+  color: #d3d3d3;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #0f1117;
+  color: #ff416c;
+}
+
+/* Badge */
+.recommended-badge {
+  position: absolute;
+  top: -18px;
+  right: 30px;
+  background: #0f1117;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  border: 1px solid #333;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: #15181f;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.4);
+}
+
+.pricing-title {
+  color: #fff;
+  font-weight: 600;
+}
+
+.pricing-sub {
+  color: #9aa8b5;
+  font-size: 13px;
+}
+
+.price-box {
+  background: #0f1117;
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #ff1744;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0px 4px 20px rgba(255, 0, 0, 0.15);
+}
+
+.pricing-desc {
+  color: #b9c6d3;
+  font-size: 15px;
+}
+
+/* Features */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  padding: 6px 0;
+  color: #dbe6ff;
+}
+
+/* Order Button */
+.order-btn {
+  background: #e40055;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #ff195f;
+}
+
+/* Delivery Info */
+.delivery span {
+  font-size: 13px;
+  margin: 0 10px;
+  color: #9aa8b5;
+}
+
+/* thise is contect section */
+
+/* body {
+  background: #0f1117;
+  color: #fff;
+} */
+
+.contact-section {
+  /* background: #0f1117; */
+  color: #c7d5e0;
+}
+
+/* Title */
+.contact-tag {
+  color: #ff3e6c;
+  letter-spacing: 2px;
+}
+
+.contact-title {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Left Card */
+.contact-card {
+  background: #15181f;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
+
+.contact-name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-role {
+  color: #9aa8b5;
+  font-size: 14px;
+}
+
+.contact-text {
+  color: #c7d4e0;
+  font-size: 14px;
+}
+
+.contact-info {
+  color: #c7d4e0;
+  font-size: 14px;
+}
+
+.social-box {
+  background: #0f1117;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #9db1c9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-box:hover {
+  background: #1f222a;
+  color: #fff;
+}
+
+/* Right Form */
+.contact-form {
+  background: #15181f;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
+
+label {
+  font-size: 13px;
+  color: #9aa8b5;
+  margin-bottom: 5px;
+}
+
+.custom-input {
+  background: #0f1117;
+  border: 1px solid #23272f;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.custom-input:focus {
+  border-color: #ff3e6c;
+  outline: none;
+  box-shadow: none;
+}
+
+.send-btn {
+  background: #ff3e6c;
+  border: none;
+  padding: 14px;
+  color: #fff;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #ff507d;
+}
+
+/* thise footer section */
+
+.footer-section {
+  /* background: #1b1e23; */
+  color: #c7d4e0;
+}
+
+.footer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer-icon {
+  background: #0f1117;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #c7d4e0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  background: #24272d;
+  color: #fff;
+}
+
+.footer-title {
+  color: #ff3e6c;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  color: #c7d4e0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: #fff;
+}
+
+.footer-line {
+  border-color: #2b2e34;
+}
+
+.footer-copy {
+  color: #9aa8b5;
 }
