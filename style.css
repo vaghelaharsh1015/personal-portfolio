@@ -436,6 +436,10 @@ body {
   font-weight: 600;
 }
 
+.tab-boxs {
+  /* background-color: #25262b; */
+}
+
 .tab-box {
   background: #25262b;
   padding: 30px;
@@ -443,13 +447,12 @@ body {
   text-align: center;
   cursor: pointer;
   color: #fff;
-  transition: 0.3s ease;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .tab-box:hover {
+  transform: scale(1.1);
   background: #2b2c31;
-  box-shadow: 0px 0px 25px rgba(255, 0, 90, 0.4);
 }
 
 .tab-box p {
@@ -459,7 +462,7 @@ body {
 }
 
 .tab-box p.active-text {
-  color: #ff0057;
+  /* color: #ff0057; */
 }
 
 .resume-card {
@@ -475,8 +478,8 @@ body {
 
 .resume-card h5 {
   font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  line-height: 30.4px;
+  font-size: 24px;
+  line-height: 39px;
   font-weight: 700;
   letter-spacing: normal;
   color: #c4cfde;
@@ -496,7 +499,8 @@ body {
 }
 
 .country-badge {
-  background: #d81b60;
+  background: #212428;
+  color: #ff014f;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 6px;
@@ -525,11 +529,6 @@ body {
 
 /* thise is tesimonial */
 
-.testimonial-section {
-  /* width: 100%;
-  padding: 60px 0; */
-}
-
 .section-tag {
   color: #ff2e63;
   font-weight: 600;
@@ -540,16 +539,11 @@ body {
 
 .section-title {
   color: #ffffff;
-  /* font-size: clamp(32px, 5vw, 48px); */
   font-weight: 700;
 }
 
 .testimonial-card {
-  /* background: rgba(255, 255, 255, 0.05); */
   border-radius: 20px;
-  backdrop-filter: blur(10px);
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
-  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); */
 }
 
 .client-image-wrapper {
@@ -588,19 +582,23 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.testimonial-text {
-  position: relative;
+.portfolio-card .text {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 26.6px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #878e99;
 }
 
-.quote-icon {
-  font-size: clamp(60px, 8vw, 100px);
-  color: rgba(255, 255, 255, 0.03);
-  position: absolute;
-  top: -30px;
-  left: -20px;
-  line-height: 1;
+.portfolio-card .text-h {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #c4cfde;
 }
-
 .rating i {
   color: #ffd700;
   font-size: 20px;
@@ -676,16 +674,13 @@ body {
   border-radius: 8px;
   text-align: center;
   font-size: 15px;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .sidebar-item:hover {
   color: #fff;
-}
-
-.sidebar-item.active {
-  background: #10131a;
-  color: #ff416c;
+  transform: scale(1.1);
+  background-color: #0f1117;
 }
 
 /* Client Card */
@@ -736,7 +731,6 @@ body {
 /* thise is my prising section */
 
 .pricing-section {
-  /* background: #0f1117; */
   color: #c7d5e0;
 }
 
@@ -761,18 +755,17 @@ body {
 }
 
 .tab {
+  background-color: #0f1117;
   padding: 10px 35px;
   color: #d3d3d3;
   cursor: pointer;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
-.tab.active {
-  background: #0f1117;
-  color: #ff416c;
+.tab:hover {
+  transform: scale(1.1);
 }
-
 /* Badge */
 .recommended-badge {
   position: absolute;
